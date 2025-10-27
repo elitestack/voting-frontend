@@ -3,11 +3,16 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import bcrypt from 'bcryptjs';
-import Admin from '../models/Admin.js';
+// import Admin from '../models/Admin.js';
 
-import authRoutes from '../routes/auth.js';
-import votersRoutes from '../routes/voters.js';
-import adminRoutes from '../routes/admin.js';
+
+import Admin from './models/Admin.js';
+import Voter from './models/Voter.js';
+
+
+import authRoutes from './routes/auth.js';
+import votersRoutes from './routes/voters.js';
+import adminRoutes from './routes/admin.js';
 
 dotenv.config();
 
