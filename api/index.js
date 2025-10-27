@@ -20,10 +20,10 @@ const app = express();
 
 // ✅ Configure CORS — whitelist your allowed domains
 const allowedOrigins = [
-  'https://cbthost.com',         // main site
-  'https://www.cbthost.com',     // www version
+  // 'https://cbthost.com',         // main site
+  'https://myvote-project.vercel.app',     // www version
   'http://localhost:3000',       // local development
-  'https://cbthost.vercel.app'   // vercel deployment
+  // 'https://cbthost.vercel.app'   // vercel deployment
 ];
 
 app.use(
